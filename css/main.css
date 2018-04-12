@@ -150,14 +150,39 @@ img {
 .btn .btn-item:hover {
 	border: 11px solid #fff22d;
 }
+
+
+.some-carousel {
+	position: relative;
+}
 .today-onzoo{
-    background: rgba(0, 0, 0, .7);
-    width: 600px;
+	display: block;
+	width: 600px;
+	padding: 15px;
     position: absolute;
+	left: 10%;
+    bottom: 15%;
+	z-index: 10;
     border-radius: 3px;
-	left: 15%;
-    top: 40%;
-    z-index: 3;
+	background: rgba(0, 0, 0, .7);
+}
+.left-wrap {
+	display: block;
+	float: left;
+	width: 26%;
+	height: 100%;
+	position: relative;
+	padding: 10px 5px;
+}
+.wrap-zoo {
+	position: absolute;
+	padding: 15px 0px 0px 25px;
+    top: -40px;
+    left: -40px;
+    width: 120%;
+	min-height: 180px;
+    border: 6px solid #fff22d;
+    border-radius: 5px;
 }
 .left-zoo {
 	text-transform: none;
@@ -167,6 +192,13 @@ img {
     padding-left: 15px;
     padding-top: 15px;
     width: 90%;
+}
+.cdots-area {
+	display: block;
+	position: absolute;
+	bottom: -66px;
+	left: 15px;
+	z-index: 15;
 }
 .owl-theme .owl-nav {
     margin-top: 10px;
@@ -220,16 +252,7 @@ img {
 	z-index: 1;
 }
 
-.wrap-zoo {
-	position: absolute;
-    padding: 10px 0px 0px 20px;
-    top: -23px;
-    left: -23px;
-    width: 29%;
-    height: 75%;
-    border: 6px solid #fff22d;
-    border-radius: 5px;
-}
+
 .right-zoo{
     float: right;
     text-transform: none;

@@ -176,13 +176,17 @@
 					</div>
 					
 				</div>
-				<div class="owl-carousel owl-theme">
+				<div class="some-carousel">
 						<div class="today-onzoo">
-								<div class="wrap-zoo">
-									<div class="left-zoo">
-										<p>Сегодня в зоопарке</p>
+								<div class="left-wrap">
+									<div class="wrap-zoo">
+										<div class="left-zoo">
+											<p>Сегодня в зоопарке</p>
+										</div>
+										<div class="cnav"></div>
 									</div>
-								</div>	
+									<div class="cdots-area"></div>
+								</div>
 								<div class="right-zoo">
 									<h2>
 										Впервые в Ташкентском зоопарке появился <span class="jiraf">жираф!</span>
@@ -190,9 +194,12 @@
 									<p>По многочисленным просьбам жителей и гостей Узбекистана, а также по давней мечте сотрудников, наконец, в Ташкентский зоопарк прибыл один из самых любимых нами с детства представитель фауны Африки – <span class="jiraf">жираф!</span></p>
 								</div>
 						</div>
-				    <div class="item"><img src="img/giraffe.jpg" alt=""></div>
-				    <div class="item"><img src="img/giraffe.jpg" alt=""></div>
+						<div class="owl-carousel owl-theme">
+								<div class="item"><img src="img/giraffe.jpg" alt=""></div>
+								<div class="item"><img src="img/giraffe.jpg" alt=""></div>
+						</div>
 				</div>
+				
 				
 			</section>
 		</section><!--end first section-->
@@ -468,5 +475,12 @@
 		</div>
 	</footer>
 	</div><!-- wrapper -->
+
+	<script>
+		$(function() {
+			$('.cnav').html($('.owl-nav'));
+			$('.cdots-area').html($('.owl-dots'));
+		});
+	</script>
 </body>
 </html>
