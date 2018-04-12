@@ -155,8 +155,9 @@ img {
     width: 600px;
     position: absolute;
     border-radius: 3px;
-    left: 0;
-    top: 400px;
+	left: 15%;
+    top: 40%;
+    z-index: 3;
 }
 .left-zoo {
 	text-transform: none;
@@ -685,11 +686,11 @@ a#pull {
 }
 @media (max-width: 1154px){
 	a#pull {
-		position: absolute;
-		right: 0;
-		z-index: 3;
-		top: 155px;
-	}
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    top: 155px;
+}
 	.top_titlename {
 	    text-transform: uppercase;
 	    font: 43px Comic Sans MS;
