@@ -185,6 +185,12 @@ img {
 	width: 40px;
 	padding: 9px;
 }
+.owl-prev:focus, .owl-next:focus {
+    outline: none;
+}
+.owl-dot:focus{
+	outline: none;
+}
 .owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover{
 	background: none;
@@ -245,6 +251,9 @@ img {
 
 }
 /*OTDEL*/
+.slick-track>a:focus {
+    outline: none;
+}
 .otdel{
     text-align: center;
     text-transform: none;
@@ -277,17 +286,27 @@ a.fish img, a.snail img, a.duck img, a.deer img {
     margin-left: -35px;
 }
 /*buttons*/
+.slick-prev{
+	left: -40px;
+}
+.slick-next{
+	right: -40px;
+}
+.slick-prev:before {
+    content: "\f104";
+	font: normal normal normal 30px/0 FontAwesome;
+	background: none;
+	color: green;
+	opacity: 0.75;
+}
+.slick-next:before {
+    content: "\f105";
+	font: normal normal normal 30px/0 FontAwesome;
+	background: none;
+	color: green;
+	opacity: 0.75;
+}
 
-.animals_leftbtn {
-	position: absolute;
-	left: 0;
-	top: 32%;
-}
-.animals_rightbtn {
-position: absolute;
-right: 0;
-top: 32%;
-}
 
 /*NEWS*/
 .news{
@@ -806,14 +825,14 @@ a#pull {
 	    left: 80px;
 	    top: 290px;
 	}
-	.animals {
+	/* .animals {
 	    position: relative;
 	    margin: 0 auto;
 	    display: block;
 	    margin-bottom: 80px;
 	    width: 60%;
-	    /*margin-left: 200px;*/
-	}
+	    /*margin-left: 200px;
+	} */
 
 	.topmenu_main{
 		display: none;
@@ -883,13 +902,13 @@ a#pull {
 
 @media (max-width: 970px){
 
-	.animals {
+	/* .animals {
 	    position: relative;
 	    margin: 0 auto;
 	    display: block;
 	    margin-bottom: 80px;
 	    width: 50%;
-	}
+	} */
 	.news-item {
 	    float: left;
 	    width: 35%;
