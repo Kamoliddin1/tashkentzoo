@@ -82,6 +82,7 @@ body,h2{
 	padding: 0;
 	margin: 0;
 	display: block;
+	position: relative;
 }
 .topmenu_main li{
 	float: left;
@@ -93,18 +94,34 @@ ul.topmenu_main > li.active > a {
     background: #42743f;
     border-radius: 5px 5px 0 0;
 }
-/* ul.topmenu_main > li.active:after {
+ul.topmenu_main > li.active a:after {
     content: "";
     background: #42743f;
-	width: 5.5%;
-	border-radius: 0 0 70% 70%;
-    height: 20px;
+    width: 100%;
+    border-radius: 0 0 70% 70%;
+    height: 15px;
     position: absolute;
-    top: 130px;
-    display: none;
+    bottom: 0;
+    left: 0;
     z-index: 3;
-} */
-ul.topmenu_main > li:hover:after, ul.topmenu_main > li.active:after {
+    transform: translateY(50%);
+    display: block;
+}
+.topmenu_main li a:after {
+    content: "";
+    background: #42743f;
+    width: 100%;
+    border-radius: 0 0 70% 70%;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transform: translateY(50%);
+    display: none;
+}
+
+ul.topmenu_main li a:hover:after, ul.topmenu_main li.active a:after {
     display: block;
 }
 .topmenu_main li a{
@@ -501,6 +518,18 @@ a.fish img, a.snail img, a.duck img, a.deer img {
 .photos{
     overflow: hidden;
 }
+.photos .row::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.row .row_column{
+	display: block;
+	float: left;
+	width: 33.33333%;
+	padding: 5px;
+}
+
 
 /* a.animate-photo > .a_photo > img:hover {
     transition: 0.75s;
@@ -509,11 +538,11 @@ a.fish img, a.snail img, a.duck img, a.deer img {
 .animate-photo{
 	cursor: pointer;
 	overflow: hidden;
-	width: auto;
-	height: auto;
+	display: block;
+	height: 166px;
 }
 
-.a_photo img{
+.animate-photo img{
 	transition: all 0.4s
 }
 .animate-photo:hover img{
