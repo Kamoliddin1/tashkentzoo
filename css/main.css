@@ -680,10 +680,16 @@ a#pull {
     list-style-type: none;
     float: left;
     width: 18%;
-    margin-left: 2%;
+    /* margin-left: 2%; */
 }
 }
 @media (max-width: 1154px){
+	a#pull {
+		position: absolute;
+		right: 0;
+		z-index: 3;
+		top: 155px;
+	}
 	.top_titlename {
 	    text-transform: uppercase;
 	    font: 43px Comic Sans MS;
@@ -763,6 +769,12 @@ a#pull {
 	    float: left;
 	    margin: 3px;
 	    width: 27%;
+	}
+	.photo_title h5{
+		margin-left: 210px;
+	}
+	.video_title h5{
+		margin-left: 290px;		
 	}
 	.a_video {
 	    float: left;
@@ -901,7 +913,14 @@ a#pull {
 }
 
 @media (max-width: 970px){
-
+	ul.topmenu_main {
+		text-align: center;
+	}
+	.topmenu_main li {
+		float: none;
+		display: inline-block;
+		margin-left: 1px;
+	}
 	/* .animals {
 	    position: relative;
 	    margin: 0 auto;
@@ -952,14 +971,16 @@ a#pull {
 	}
 	.list li {
 	    padding: 4px;
-	    float: left;
+		/* float: left; */
+		display: inline-block;
 	}
 	.zoo_footer .list {
 	    list-style-type: none;
 	    float: none;
 	    width: 100%;
-	    margin-left: 6%;
-	    overflow: hidden;
+	    /* margin-left: 6%; */
+		overflow: hidden;
+		text-align: center;
 	}
 	.address {
 	    float: left;
@@ -1014,6 +1035,9 @@ a#pull {
 
 }
 @media (max-width: 795px){
+	.buy{
+		margin: 10px 0 20px 0px;
+	}
 	.news-item {
 	    float: left;
 	    /*width: 50%;*/
