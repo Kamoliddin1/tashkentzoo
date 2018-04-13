@@ -148,6 +148,9 @@ ul.topmenu_main li a:hover:after, ul.topmenu_main li.active a:after {
 img {
     max-width: 100%
 }
+/* .item {
+    margin-top: -85px;
+} */
 .btn{
 	display: block;
     position: absolute;
@@ -174,11 +177,11 @@ img {
 }
 .today-onzoo{
 	display: block;
-	width: 600px;
-	padding: 15px;
+	width: 641px;
+	padding: 7px;
     position: absolute;
-	left: 10%;
-    bottom: 15%;
+	left: 15%;
+    bottom: 35%;
 	z-index: 10;
     border-radius: 3px;
 	background: rgba(0, 0, 0, .7);
@@ -186,7 +189,7 @@ img {
 .left-wrap {
 	display: block;
 	float: left;
-	width: 26%;
+	width: 24%;
 	height: 100%;
 	position: relative;
 	padding: 10px 5px;
@@ -194,8 +197,8 @@ img {
 .wrap-zoo {
 	position: absolute;
 	padding: 15px 0px 0px 25px;
-    top: -40px;
-    left: -40px;
+    top: -35px;
+    left: -35px;
     width: 120%;
 	min-height: 180px;
     border: 6px solid #fff22d;
@@ -210,18 +213,48 @@ img {
     padding-top: 15px;
     width: 90%;
 }
+.right-zoo{
+    float: right;
+    text-transform: none;
+    width: 75%;
+    color: #fff;
+    padding-left: 10px;
+}
+.right-zoo h2{
+	text-transform: none;
+	font-size: 34px;
+	line-height: 1;
+    padding-bottom: 10px;
+}
+
+.right-zoo p{
+	font-size: 18px;
+	padding-bottom: 10px;
+	font-family: 'ProximaNova-Regular';
+}
 .cdots-area {
 	display: block;
-	position: absolute;
-	bottom: -66px;
-	left: 15px;
-	z-index: 15;
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    z-index: 15;
 }
 .owl-theme .owl-nav {
     margin-top: 10px;
     position: absolute;
     top: 42%;
-    left: 20%;
+	left: 20%;
+	padding: 20px;
+}
+.owl-nav{
+	padding-left: 15px;
+    padding-top: 10px;
+
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    border: none;
+	background: none;
+	margin-right: 10px;
 }
 .fa {
     display: inline-block;
@@ -234,6 +267,8 @@ img {
     height: 40px;
 	width: 40px;
 	padding: 9px;
+	color: #4b4b4b;
+	cursor: pointer;
 }
 .owl-prev:focus, .owl-next:focus {
     outline: none;
@@ -241,56 +276,29 @@ img {
 .owl-dot:focus{
 	outline: none;
 }
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover{
+
+.owl-dot {
+	border: none;
 	background: none;
-    color: #FFF;
-    text-decoration: none;
 }
-.owl-theme .owl-dots .owl-dot span {
-    margin: 5px 7px;
-    display: block;
-    /* -webkit-backface-visibility: visible; */
-    transition: opacity .2s ease;
+.owl-dots span {
     border: 4px solid #fff22d;
     width: 15px;
     height: 15px;
-	border-radius: 50%;
-	background: none;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+ .owl-dots span:hover{
     background: green;
     border: 4px solid green;
 }
-.owl-dots {
-	position: absolute;
-	top: 53%;
-	left: 21%;
-	z-index: 1;
-}
 
-
-.right-zoo{
-    float: right;
-    text-transform: none;
-    width: 74%;
-    color: #fff;
-    padding: 10px;
-}
 .jiraf{
 	color:#fff22d;
 }
 
-.right-zoo h2{
-	text-transform: none;
-	font-size: 31px;
-}
 
-.right-zoo p{
-	font-size: 18px;
-	margin-top: 4px;
-
-}
 /*OTDEL*/
 .slick-track>a:focus {
     outline: none;
@@ -530,11 +538,6 @@ a.fish img, a.snail img, a.duck img, a.deer img {
 	padding: 5px;
 }
 
-
-/* a.animate-photo > .a_photo > img:hover {
-    transition: 0.75s;
-    transform: scale(1.1);
-} */
 .animate-photo{
 	cursor: pointer;
 	overflow: hidden;
@@ -550,13 +553,7 @@ a.fish img, a.snail img, a.duck img, a.deer img {
 	transform: scale(1.15) rotate(0.01deg);
 	opacity: 0.5;
 }
-.a_photo{
-    float: left;
-	margin: 3px;
-	
-	overflow: hidden;
-	height: 100%;
-}
+
 
 .video_right{
     float: right;
@@ -722,33 +719,35 @@ a#pull {
 /*adaptivka*/
 @media (max-width: 1224px){
 	.today-onzoo{
-	    background: rgba(0, 0, 0, .7);
-	    width: 590px;
-	    position: absolute;
-	    border-radius: 3px;
-	    left: 40px;
-	    top: 400px;
+		display: block;
+		width: 641px;
+		padding: 7px;
+		position: absolute;
+		left: 10%;
+		bottom: 15%;
+		z-index: 10;
+		border-radius: 3px;
+		background: rgba(0, 0, 0, .7);
 	}
 	.zoo_footer .list {
-    list-style-type: none;
-    float: left;
-    width: 18%;
-    /* margin-left: 2%; */
-}
+		list-style-type: none;
+		float: left;
+		width: 18%;
+	}
 }
 @media (max-width: 1154px){
 	a#pull {
-    position: absolute;
-    right: 0;
-    z-index: 3;
-    top: 155px;
-}
+		position: absolute;
+		right: 0;
+		z-index: 3;
+		top: 155px;
+	}
 	.top_titlename {
 	    text-transform: uppercase;
 	    font: 43px Comic Sans MS;
 	    font-weight: bold;
 	    color: #42743f;
-	     float: none; 
+	    float: none; 
 	}
 	.btn {
 	    display: block;
@@ -756,7 +755,7 @@ a#pull {
 	    right: 30px;
 	    top: 10px;
 	}
-	.left-zoo{
+	/* .left-zoo{
 		font-size: 20px;
 	}
 	.right-zoo h2 {
@@ -766,14 +765,17 @@ a#pull {
 	.right-zoo p {
 	    font-size: 16px;
 	    margin-top: 4px;
-	}
-	.today-onzoo {
-	    background: rgba(0, 0, 0, .7);
-	    width: 540px;
-	    position: absolute;
-	    border-radius: 3px;
-	    left: 80px;
-	    top: 340px;
+	} */
+	.today-onzoo{
+		display: block;
+		width: 641px;
+		padding: 7px;
+		position: absolute;
+		left: 10%;
+		bottom: 15%;
+		z-index: 10;
+		border-radius: 3px;
+		background: rgba(0, 0, 0, .7);
 	}
 	.animals {
 	    position: relative;
@@ -817,12 +819,14 @@ a#pull {
         padding-top: 20px;
         text-align: center;
         text-transform: none;
-    }
-	.a_photo {
-	    float: left;
-	    margin: 3px;
-	    width: 27%;
 	}
+	.animate-photo {
+		cursor: pointer;
+		overflow: hidden;
+		display: block;
+		height: 142px;
+	}
+
 	.photo_title h5{
 		margin-left: 210px;
 	}
@@ -871,7 +875,7 @@ a#pull {
 	    right: 20px;
 	    top: 10px;
 	}
-	.left-zoo{
+	/* .left-zoo{
 		font-size: 20px;
 	}
 	.right-zoo h2 {
@@ -881,14 +885,17 @@ a#pull {
 	.right-zoo p {
 	    font-size: 16px;
 	    margin-top: 4px;
-	}
-	.today-onzoo {
-	    background: rgba(0, 0, 0, .7);
-	    width: 592px;
-	    position: absolute;
-	    border-radius: 3px;
-	    left: 80px;
-	    top: 290px;
+	} */
+	.today-onzoo{
+		display: block;
+		width: 641px;
+		padding: 7px;
+		position: absolute;
+		left: 10%;
+		bottom: 15%;
+		z-index: 10;
+		border-radius: 3px;
+		background: rgba(0, 0, 0, .7);
 	}
 	/* .animals {
 	    position: relative;
@@ -914,7 +921,12 @@ a#pull {
         float: left;
         width: 25%;
         margin-left: 6%;
-    }
+	}
+	.news-item-content h6 {
+		font-size: 14px;
+		margin-top: 20px;
+		font-family: 'ProximaNova-Regular';
+	}
     .baby {
 	    background-color: #fffde2;
 	    border: 8px solid #fff;
@@ -927,9 +939,6 @@ a#pull {
 	    outline: 1px solid #a39e61;
 	    margin-left: -16px;
 	}
-    /*.news-btn{
-    	margin-right: 140px;
-    }*/
     	
     .zoo-slider {
         padding-top: 20px;
@@ -940,10 +949,11 @@ a#pull {
 	    font-size: 23px;
 	    color: #fff22d;
 	}
-	.a_photo {
-	    float: left;
-	    margin: 3px;
-	    width: 27%;
+	.animate-photo {
+		cursor: pointer;
+		overflow: hidden;
+		display: block;
+		height: 134px;
 	}
 	.a_video {
 	    float: left;
@@ -981,6 +991,17 @@ a#pull {
 	    margin-bottom: 80px;
 	    width: 50%;
 	} */
+	.today-onzoo{
+		display: block;
+		width: 641px;
+		padding: 7px;
+		position: absolute;
+		left: 10%;
+		bottom: 15%;
+		z-index: 10;
+		border-radius: 3px;
+		background: rgba(0, 0, 0, .7);
+	}
 	.news-item {
 	    float: left;
 	    width: 35%;
@@ -1001,9 +1022,16 @@ a#pull {
 	.news-item.none {
 	    display: none;
 	}
+	
 	.news-btn-top {
 	    text-align: center;
 	    margin: 60% 0 45px 0;
+	}
+	.animate-photo {
+		cursor: pointer;
+		overflow: hidden;
+		display: block;
+		height: 118px;
 	}
 	.photo_title h5 {
 	    margin-left: 150px;
@@ -1045,9 +1073,9 @@ a#pull {
 
 }
 @media (max-width: 860px){
-	.today-onzoo{
-		display: none;
-	}
+		.today-onzoo{
+			display: none;
+		}
 	.news-btn-top {
 	    text-align: center;
 	    margin: 64% 0 45px 0;
@@ -1125,6 +1153,19 @@ a#pull {
 	    float: left;
 	    margin-bottom: 5%;
 	}
+	.animate-photo {
+		cursor: pointer;
+		overflow: hidden;
+		display: block;
+		height: 166px;
+		width: 183px;
+	}
+	.row .row_column {
+		display: block;
+		float: left;
+		width: 29%;
+		padding: 5px;
+	}
 	.photo_left {
 	    float: left;
 	    width: 100%;
@@ -1136,7 +1177,7 @@ a#pull {
 	    margin-right: -6%;
 	}
 	.photo_title h5 {
-	    margin-left: 300px;
+	    margin-left: 380px;
 	    font-size: 14px;
 	    color: #42743f;
 	    padding-top: 10px;
@@ -1153,4 +1194,19 @@ a#pull {
 	    margin-bottom: 40px;
 	}	
 
+}
+@media (max-width: 686px){
+	.news-item-content p {
+		font-size: 13px;
+		color: #5f5419;
+	}
+	.news-item-content h3 {
+		font-size: 16px;
+	}
+
+	.news-item-content h6 {
+		font-size: 12px;
+		margin-top: 20px;
+		font-family: 'ProximaNova-Regular';
+	}
 }
