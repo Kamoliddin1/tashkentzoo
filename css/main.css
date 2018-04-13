@@ -59,6 +59,45 @@ body,h2{
 .buy:hover{
 	background-color: #605619e1;
 }
+a.buy:focus {
+    outline: none;
+}
+
+.animated-modal {
+	max-width: 550px;
+	border-radius: 4px;
+	overflow: hidden;
+	
+	transform: translateY(-50px);
+	transition: all .7s;
+  }
+  
+  .animated-modal h2,
+  .animated-modal p {
+	transform: translateY(-50px);
+	opacity: 0;
+	
+	transition-property: transform, opacity;
+	transition-duration: .4s;
+  }
+  
+  /* Final state */
+  .fancybox-slide--current .animated-modal,
+  .fancybox-slide--current .animated-modal h2,
+  .fancybox-slide--current .animated-modal p {
+	transform: translateY(0);
+	opacity: 1;
+  }
+  
+  /* Reveal content with different delays */
+  .fancybox-slide--current .animated-modal h2 {
+	transition-delay: .1s;
+  }
+  
+  .fancybox-slide--current .animated-modal p {
+	transition-delay: .3s;
+  }
+
 .lang {
     background-color: #42743f;
     border-radius: 30px;
@@ -99,7 +138,7 @@ ul.topmenu_main > li.active a:after {
     background: #42743f;
     width: 100%;
     border-radius: 0 0 70% 70%;
-    height: 15px;
+    height: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -112,7 +151,7 @@ ul.topmenu_main > li.active a:after {
     background: #42743f;
     width: 100%;
     border-radius: 0 0 70% 70%;
-    height: 15px;
+    height: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -289,7 +328,11 @@ img {
     display: inline-block;
     margin-right: 5px;
 }
- .owl-dots span:hover{
+.owl-dot.active span{
+	background: green;
+    border: 4px solid green;
+}
+.owl-dot span:hover{
     background: green;
     border: 4px solid green;
 }
@@ -494,7 +537,8 @@ a.fish img, a.snail img, a.duck img, a.deer img {
 
 /*MEDIA*/
 .media{
-    margin-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 65px;
     overflow: hidden;
 }
 .photo_left{
